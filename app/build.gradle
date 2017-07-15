@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 15
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId 'com.hajora.dndcommerce'
+        minSdkVersion 11
+        targetSdkVersion 15
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile files('libs/activation.jar')
+    compile files('libs/mail.jar')
+    compile files('libs/additionnal.jar')
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">DNDCommerce</string>
+    <string name="menu_settings">Settings</string>
+    <string name="submit">Prijava</string>
+    <string name="location">Lokacija</string>
+    <string name="education">Edukacije</string>
+    <string name="news">Vesti</string>
+    <string name="about">O nama</string>
+    <string name="contact">Kontakt</string>
+    <string name="about_company">O DND-u</string>
+    <string name="about_history">Istorijat</string>
+    <string name="about_vision">Vizija</string>
+    <string name="about_parnters">Partneri</string>
+
+
+</resources>

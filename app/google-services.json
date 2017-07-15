@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "735878150188",
+    "firebase_url": "https://pushnotificationsmarina.firebaseio.com",
+    "project_id": "pushnotificationsmarina",
+    "storage_bucket": "pushnotificationsmarina.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735878150188:android:4b007ec346601d2f",
+        "android_client_info": {
+          "package_name": "com.hajora.dmdcommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735878150188-kbpjg4jlf1ssnjncd24trsausgf1in0j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hajora.dmdcommerce",
+            "certificate_hash": "da59ece8ee5d210ac6242472c929107962f372d1"
+          }
+        },
+        {
+          "client_id": "735878150188-scfm10nf4sgme0j7ba03m42e15jojuea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ybNR3p77K6TtlWUMnOAkp-Stb3fNbIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735878150188-b0p4snf3d2ufknloveinu1dpj8vjbauv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hajora.PushNotificationsMilos"
+              }
+            },
+            {
+              "client_id": "735878150188-scfm10nf4sgme0j7ba03m42e15jojuea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735878150188:android:00e0b668e928e10e",
+        "android_client_info": {
+          "package_name": "com.hajora.dndcommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735878150188-qn0s33c5dah0bprk6opgi9fplpbcr662.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hajora.dndcommerce",
+            "certificate_hash": "da59ece8ee5d210ac6242472c929107962f372d1"
+          }
+        },
+        {
+          "client_id": "735878150188-scfm10nf4sgme0j7ba03m42e15jojuea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ybNR3p77K6TtlWUMnOAkp-Stb3fNbIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735878150188-b0p4snf3d2ufknloveinu1dpj8vjbauv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hajora.PushNotificationsMilos"
+              }
+            },
+            {
+              "client_id": "735878150188-scfm10nf4sgme0j7ba03m42e15jojuea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
