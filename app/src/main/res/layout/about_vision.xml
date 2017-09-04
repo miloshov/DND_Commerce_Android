@@ -3,4 +3,25 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Vizija i tendecije"
+        android:textAlignment="center"
+        android:textSize="@android:dimen/app_icon_size" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Glavni cilj kompanije DND Commerce je podizanje celokupnog procesa sterilizacije na viši nivo u svim zdravstvenim ustanovama, kako u Srbiji, tako i na teritoriji cele bivše Jugoslavije.
+Neprekidno praćenje inovacija iz oblasti sterilizacije je odgovornost i obaveza kompanije DND Commerce.
+Takođe, konstantnim ulaganjem u obrazovanje kroz edukacije (interne i eksterne), radionice i  seminare, radimo na podizanju svesti o sterilizaciji kod svih zdravstvenih radnika.
+Fleksibilnošću i širokim opsegom proizvoda spremni smo da odgovorimo na zahtev krajnjeg korisnika, što nas čini jedinstvenim i prepoznatljivim na tržištu.
+"
+        android:textSize="24sp" />
+
 </LinearLayout>

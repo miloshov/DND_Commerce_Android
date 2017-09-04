@@ -25,10 +25,10 @@ public class News extends Activity implements SwipeRefreshLayout.OnRefreshListen
 	ListViewAdapterNews adapter;
 	ProgressDialog mProgressDialog;
 	ArrayList<HashMap<String, String>> arraylist;
-	static String NAME = "naziv";
-	static String DATE = "datum";
-	static String DESCRIPTION = "opis";
-	static String IMAGE = "slika";
+	static String NAME = "name";
+	static String DATE = "date";
+	static String DESCRIPTION = "details";
+	static String IMAGE = "image";
 	private SwipeRefreshLayout swipeLayout;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -91,10 +91,10 @@ public class News extends Activity implements SwipeRefreshLayout.OnRefreshListen
 					HashMap<String, String> map = new HashMap<String, String>();
 					jsonobject = jsonarray.getJSONObject(i);
 					// Retrive JSON Objects
-					map.put("naziv", jsonobject.getString("naziv"));
-					map.put("datum", jsonobject.getString("datum"));
-					map.put("opis", jsonobject.getString("opis"));
-					map.put("slika", jsonobject.getString("slika"));
+					map.put("name", jsonobject.getString("name"));
+					map.put("date", jsonobject.getString("date"));
+					map.put("details", jsonobject.getString("details"));
+					map.put("image", jsonobject.getString("image"));
 
 					// Set the JSON Objects into the array
 					arraylist.add(map);

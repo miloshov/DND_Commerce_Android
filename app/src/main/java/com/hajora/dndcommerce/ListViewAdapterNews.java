@@ -87,7 +87,7 @@ public class ListViewAdapterNews extends BaseAdapter {
 				// Pass all data country
 				intent.putExtra("date", resultp.get(News.DATE));
 				// Pass all data population
-				intent.putExtra("description",resultp.get(News.DESCRIPTION));
+				intent.putExtra("details",resultp.get(News.DESCRIPTION));
 				// Pass all data flag
 				intent.putExtra("image", resultp.get(News.IMAGE));
 

@@ -52,7 +52,7 @@ public class SingleItemViewEducation extends Activity {
         TextView txtname = (TextView) findViewById(R.id.name);
 		TextView txtdate = (TextView) findViewById(R.id.date);
 		TextView txtdescription = (TextView) findViewById(R.id.description);
-        Button btn = (Button) findViewById(R.id.button);
+        Button btn = (Button) findViewById(R.id.register);
         Button location = (Button) findViewById(R.id.location);
 		// Locate the ImageView in singleitemview.xml
 		ImageView imgflag = (ImageView) findViewById(R.id.image);

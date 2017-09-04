@@ -25,12 +25,12 @@ public class Education extends Activity implements SwipeRefreshLayout.OnRefreshL
 	ListViewAdapterEducation adapter;
 	ProgressDialog mProgressDialog;
 	ArrayList<HashMap<String, String>> arraylist;
-	static String NAME = "naziv";
-	static String DATE = "datum";
-	static String DESCRIPTION = "opis";
-	static String IMAGE = "slika";
-	static String ADDRESS = "adresa";
-    static String CITY = "grad";
+	static String NAME = "name";
+	static String DATE = "date";
+	static String DESCRIPTION = "details";
+	static String IMAGE = "image";
+	static String ADDRESS = "address";
+    static String CITY = "city";
 	static String LAT = "lat";
 	static String LON = "lon";
 	private SwipeRefreshLayout swipeLayout;
@@ -85,22 +85,22 @@ public class Education extends Activity implements SwipeRefreshLayout.OnRefreshL
 			arraylist = new ArrayList<HashMap<String, String>>();
 			// Retrieve JSON Objects from the given URL address
 			jsonobject = JSONfunctions
-					.getJSONfromURL("http://gdecemo.byethost33.com/MediaApp/edukacije.php");
+					.getJSONfromURL("http://gdecemo.byethost33.com/MediaApp/educations.php");
 
 			try {
 				// Locate the array name in JSON
-				jsonarray = jsonobject.getJSONArray("Edukacije");
+				jsonarray = jsonobject.getJSONArray("Educations");
 
 				for (int i = 0; i < jsonarray.length(); i++) {
 					HashMap<String, String> map = new HashMap<String, String>();
 					jsonobject = jsonarray.getJSONObject(i);
 					// Retrive JSON Objects
-					map.put("naziv", jsonobject.getString("naziv"));
-					map.put("datum", jsonobject.getString("datum"));
-					map.put("opis", jsonobject.getString("opis"));
-					map.put("slika", jsonobject.getString("slika"));
-					map.put("adresa", jsonobject.getString("adresa"));
-                    map.put("grad", jsonobject.getString("grad"));
+					map.put("name", jsonobject.getString("name"));
+					map.put("date", jsonobject.getString("date"));
+					map.put("details", jsonobject.getString("details"));
+					map.put("image", jsonobject.getString("image"));
+					map.put("address", jsonobject.getString("address"));
+                    map.put("city", jsonobject.getString("city"));
 					map.put("lat", jsonobject.getString("lat"));
 					map.put("lon", jsonobject.getString("lon"));
 					// Set the JSON Objects into the array
