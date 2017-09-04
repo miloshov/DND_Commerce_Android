@@ -10,7 +10,7 @@
         android:gravity="center_horizontal"
         android:text="Istorijat"
         android:textAlignment="center"
-        android:textSize="@android:dimen/app_icon_size" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -18,6 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:text="Kompanija DND Commerce je osnovana 1992. godine, i opstala je u vremenima koja su iza nas, kako dobrim, tako i lošim. DND Commerce je napredovao punih 20 godina, čime je stekao status kompanije sa tradicijom u koju su uloženi znanje, trud, rad, kapital i energija, kao osnovni preduslovi za uspešnost i dugo trajanje. Daljim napredovanjem trudićemo se da opravdamo ukazano poverenje svih naših kupaca, kako sadašnjih, tako i budućih."
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
 </LinearLayout>

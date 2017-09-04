@@ -51,6 +51,7 @@ public class SingleItemViewEducation extends Activity {
 		// Locate the TextViews in singleitemview.xml
         TextView txtname = (TextView) findViewById(R.id.name);
 		TextView txtdate = (TextView) findViewById(R.id.date);
+        TextView txtaddress = (TextView) findViewById(R.id.address);
 		TextView txtdescription = (TextView) findViewById(R.id.description);
         Button btn = (Button) findViewById(R.id.register);
         Button location = (Button) findViewById(R.id.location);
@@ -60,6 +61,7 @@ public class SingleItemViewEducation extends Activity {
 		// Set results to the TextViews
         txtname.setText(name);
         txtdate.setText(date);
+        txtaddress.setText(address);
         txtdescription.setText(description);
         submitName = txtname.getText().toString();
 
