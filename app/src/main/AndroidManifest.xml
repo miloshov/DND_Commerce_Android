@@ -44,6 +44,7 @@
         <activity android:name="com.hajora.dndcommerce.AboutHistory" />
         <activity android:name="com.hajora.dndcommerce.AboutVision" />
         <activity android:name="com.hajora.dndcommerce.AboutPartners" />
+        <activity android:name="com.hajora.dndcommerce.Ask" />
     </application>
     <service
         android:name=".MyFirebaseMessagingService">
