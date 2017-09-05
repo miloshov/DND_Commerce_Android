@@ -68,6 +68,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="18dp"
             android:width="1dp"
+            android:background="@android:color/transparent"
             android:elevation="24dp"
             android:fitsSystemWindows="true"
             android:scaleX="1"
