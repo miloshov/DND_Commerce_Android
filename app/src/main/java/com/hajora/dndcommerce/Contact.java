@@ -22,4 +22,8 @@ public class Contact extends Activity {
         call.setData(Uri.parse("tel:0377778888"));
         startActivity(call);
     }
+    public void ask(View v){
+        Intent ask = new Intent(Contact.this, Ask.class);
+        startActivity(ask);
+    }
 }
