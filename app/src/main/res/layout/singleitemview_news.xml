@@ -4,35 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/edukacija_details">
+    android:background="@drawable/vesti_details">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="328dp"
+            android:layout_width="360dp"
             android:layout_height="0dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="top"
-            android:orientation="vertical"
-            android:layout_marginBottom="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="8dp"
-            android:layout_marginRight="0dp"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginLeft="0dp"
-            app:layout_constraintLeft_toLeftOf="parent">
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp">
 
             <ImageView
                 android:id="@+id/imagen"
                 android:layout_width="match_parent"
-                android:layout_height="142dp"
+                android:layout_height="140dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="55dp"
+                android:layout_marginTop="40dp"
                 android:background="#000000"
                 android:scaleType="fitXY" />
 
@@ -51,7 +48,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="29dp"
                 android:layout_below="@+id/namen"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -79,44 +77,6 @@
                 </LinearLayout>
             </ScrollView>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="9dp"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteY="41dp"
-            tools:layout_editor_absoluteX="16dp">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="328dp"
-            android:layout_height="103dp"
-
-            android:layout_gravity="bottom"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="0dp"
-            android:layout_marginRight="16dp"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginLeft="16dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:id="@+id/linearLayout2">
-
-            <Button
-                android:id="@+id/register"
-                android:layout_width="wrap_content"
-                android:layout_height="97dp"
-                android:layout_weight="1.07"
-                android:background="@android:color/transparent" />
-
-            <Button
-                android:id="@+id/location"
-                android:layout_width="wrap_content"
-                android:layout_height="101dp"
-                android:layout_weight="0.88"
-                android:background="@android:color/transparent" />
         </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>

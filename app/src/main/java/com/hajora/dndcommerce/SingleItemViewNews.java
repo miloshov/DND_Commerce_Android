@@ -28,7 +28,7 @@ public class SingleItemViewNews extends Activity {
 		// Get the result of country
 		date = i.getStringExtra("date");
 		// Get the result of population
-		description = i.getStringExtra("description");
+		description = i.getStringExtra("details");
 		// Get the result of flag
 		image = i.getStringExtra("image");
 
