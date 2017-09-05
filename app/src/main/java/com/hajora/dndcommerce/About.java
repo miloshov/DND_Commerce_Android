@@ -35,7 +35,7 @@ public class About extends Activity {
         startActivity(vision);
     }
     public void call(View v){
-        Intent call = new Intent(Intent.ACTION_CALL);
+        Intent call = new Intent(Intent.ACTION_DIAL);
         call.setData(Uri.parse("tel:0377778888"));
         startActivity(call);
     }
