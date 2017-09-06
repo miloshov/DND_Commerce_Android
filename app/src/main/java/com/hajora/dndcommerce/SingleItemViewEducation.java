@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -67,6 +69,9 @@ public class SingleItemViewEducation extends Activity {
 
         final String addressmap = address;
         final String citymap = city;
+        final String desc = description;
+        final String sharename = name;
+        final String sharedate = date;
         location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,7 +81,18 @@ public class SingleItemViewEducation extends Activity {
                 startActivity(intent);
             }
         });
-
+        ImageButton share = (ImageButton) findViewById(R.id.share);
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView text = (TextView) findViewById(R.id.text_ask);
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, sharename + "\n" + sharedate +"\n" + desc);
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+            }
+        });
 
 
                 btn.setOnClickListener(new View.OnClickListener() {
@@ -98,5 +114,19 @@ public class SingleItemViewEducation extends Activity {
 		imageLoader.DisplayImage(image, imgflag);
 
 	}
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        if (hasFocus) {
+            getWindow().getDecorView().setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
+    }
 
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pitanje">
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="57dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_share_black_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="255dp" />
+
+        <EditText
+            android:id="@+id/name_ask"
+            android:layout_width="178dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="102dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Ime"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="2"/>
+
+        <EditText
+            android:id="@+id/email_ask"
+            android:layout_width="179dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_ask" />
+
+        <EditText
+            android:id="@+id/text_ask"
+            android:layout_width="242dp"
+            android:layout_height="218dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Pitajte nas"
+            android:inputType="textMultiLine"
+            android:selectAllOnFocus="false"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_optimizationLevel="all"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="180dp" />
+
+        <Button
+            android:id="@+id/send_ask"
+            android:layout_width="95dp"
+            android:layout_height="83dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="18dp"
+
+            android:background="@android:color/transparent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_ask"
+            app:layout_optimizationLevel="all"
+            app:layout_constraintVertical_bias="0.843"
+            app:layout_constraintHorizontal_bias="0.502" />
+    </android.support.constraint.ConstraintLayout>

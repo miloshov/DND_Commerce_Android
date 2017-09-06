@@ -13,6 +13,7 @@
         android:normalScreens="true"
         android:smallScreens="true"
         android:xlargeScreens="true"
+        android:anyDensity="true"
      />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -44,7 +45,8 @@
         <activity android:name="com.hajora.dndcommerce.AboutHistory" />
         <activity android:name="com.hajora.dndcommerce.AboutVision" />
         <activity android:name="com.hajora.dndcommerce.AboutPartners" />
-        <activity android:name="com.hajora.dndcommerce.Ask" />
+        <activity android:name="com.hajora.dndcommerce.Ask"
+            android:windowSoftInputMode="stateUnchanged"/>
     </application>
     <service
         android:name=".MyFirebaseMessagingService">

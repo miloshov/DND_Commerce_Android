@@ -2,121 +2,49 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\25133318be4d73c009b3b8c4ac6616f4a57eea0b\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\classes_9d3346d551facf22cd41e472acbe94803450e77e.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="D:\DND_Commerce_Android\app\libs\activation.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\activation_6d8fe5977617465c40f88f1fec91931ec50a69ff.jar" />
+        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\activation_6d8fe5977617465c40f88f1fec91931ec50a69ff\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\e2e62cc36b25dd0f046a791d903990c87da69895\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\classes_763dcc1c0c2651ce5e321a4d910daaf187667841.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\b0f8f5b3c60bb262bbcad13e93459641fc451a78\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\classes_8e9fded377836f56a5500a4faf4d23ca91c43b40.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\aa65e09a870478a8ee6af19d9537553e17f224f8\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\classes_20d79e3e96731ccb462dbf53da04e23650f6b25a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\84cee8d0c8be014aa2bfa25a9f417e87800f4360\output\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_022a1340d7195caea15f6038d5485dc8473a238e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\DND_Commerce_Android\app\libs\additionnal.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\additionnal_016f7e0013e0be5aab1e17456338e691e9760bb0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\f70a35fdccf5acaa1b60dd11a08ef3e4bb6d9868\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\classes_bd8fb9ef227772305e4969107723a3030f2719c5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\aca058201b276cab657c164f2ae3f280d8a31d19\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\classes_1755b52f9d4bbbd4fb176b96becf8652e0b0559f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nikol\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_05e7b15272124fcb8be2deecd94f5e9aa560f3bf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\79b4611aebf189d4cc5bdf51648f65e0be301bb4\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\classes_86925924281e8d201b909b2b1ea2abf37e705ac1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nikol\.android\build-cache\84cee8d0c8be014aa2bfa25a9f417e87800f4360\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\classes_9e5e57a24d865ad66bbeb7c12c656195fe1b085a.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="D:\DND_Commerce_Android\app\libs\mail.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="428e267abff0d10802ccde86b915da2c20471160">
-        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\pre-dexed\debug\mail_06272f639bbd9952c4d0416f19114763d34a09be.jar" />
+        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\mail_06272f639bbd9952c4d0416f19114763d34a09be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\DND_Commerce_Android\app\libs\additionnal.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_016f7e0013e0be5aab1e17456338e691e9760bb0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\DND_Commerce_Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9def43b0d530342f13c4506cc8adf7fd095afcc9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\DND_Commerce_Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2f7d4c3fe0d1252b889729c0446bf29a0107a537">
+        <dex dex="D:\DND_Commerce_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5d626ea51c2a97e2fb5e98d51c186fd107b6823b\classes.dex" />
     </item>
 
 </items>

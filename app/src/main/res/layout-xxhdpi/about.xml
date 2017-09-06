@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="fill_horizontal"
-    android:gravity="fill_vertical"
-    android:orientation="vertical"
-    android:background="@drawable/o_nama">
 
-    <android.support.constraint.ConstraintLayout
+
+    <android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp"
-        android:layout_weight="1">
+        android:layout_gravity="fill_horizontal"
+        android:gravity="fill_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/o_nama">
 
         <Button
             android:id="@+id/partners"
-            android:layout_width="88dp"
-            android:layout_height="86dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_marginBottom="16dp"
             android:layout_marginEnd="5dp"
             android:layout_marginLeft="16dp"
@@ -30,15 +25,15 @@
             android:background="@android:color/transparent"
             android:onClick="partners"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.845"
+            app:layout_constraintHorizontal_bias="0.839"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.712" />
+            app:layout_constraintVertical_bias="0.72" />
 
         <Button
             android:id="@+id/vision"
-            android:layout_width="91dp"
+            android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
@@ -49,16 +44,16 @@
             android:background="@android:color/transparent"
             android:onClick="vision"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintHorizontal_bias="0.839"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.54" />
+            app:layout_constraintVertical_bias="0.558" />
 
         <Button
             android:id="@+id/history"
-            android:layout_width="89dp"
-            android:layout_height="89dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -67,35 +62,35 @@
             android:background="@android:color/transparent"
             android:onClick="history"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintHorizontal_bias="0.839"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.364" />
+            app:layout_constraintVertical_bias="0.369" />
 
-        <Button
-            android:id="@+id/company"
-            android:layout_width="91dp"
-            android:layout_height="79dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginEnd="59dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="0.25"
-            android:background="@android:color/transparent"
-            android:onClick="company"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.843"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.186" />
+    <Button
+        android:id="@+id/company"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.25"
+        android:background="@android:color/transparent"
+        android:onClick="company"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
 
         <Button
             android:id="@+id/call"
-            android:layout_width="97dp"
-            android:layout_height="100dp"
+            android:layout_width="104dp"
+            android:layout_height="97dp"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -104,13 +99,10 @@
             android:onClick="call"
             android:padding="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            tools:layout_editor_absoluteY="451dp"
+            tools:layout_editor_absoluteY="527dp"
             tools:textColor="@color/blue_text" />
     </android.support.constraint.ConstraintLayout>
-
-</LinearLayout>

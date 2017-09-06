@@ -61,7 +61,7 @@ public class ListViewAdapterEducation extends BaseAdapter {
 
 		// Locate the TextViews in listview_item.xml
 		name = (TextView) itemView.findViewById(R.id.name);
-		date = (TextView) itemView.findViewById(R.id.date);
+		/*date = (TextView) itemView.findViewById(R.id.date);*/
 		description = (TextView) itemView.findViewById(R.id.description);
 
 		// Locate the ImageView in listview_item.xml
@@ -69,7 +69,7 @@ public class ListViewAdapterEducation extends BaseAdapter {
 
 		// Capture position and set results to the TextViews
 		name.setText(resultp.get(Education.NAME));
-		date.setText(resultp.get(Education.DATE));
+		/*date.setText(resultp.get(Education.DATE));*/
 		description.setText(resultp.get(Education.DESCRIPTION));
 		// Capture position and set results to the ImageView
 		// Passes flag images URL into ImageLoader.class
