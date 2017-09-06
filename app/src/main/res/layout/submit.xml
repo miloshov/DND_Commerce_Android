@@ -31,7 +31,8 @@
         android:ems="10"
         android:hint="Ime"
         android:inputType="textPersonName"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:drawableRight="@android:drawable/star_on" />
 
     <EditText
         android:id="@+id/surname"

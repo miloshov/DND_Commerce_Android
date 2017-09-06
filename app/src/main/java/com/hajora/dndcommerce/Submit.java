@@ -43,6 +43,15 @@ public class Submit extends Activity {
                 String mphone = phone.getText().toString();
                 String memail = email.getText().toString();
                 StrictMode.ThreadPolicy policy = null;
+                if( name.getText().toString().length() == 0 )
+                    name.setError( "Ime je obavezno!" );
+                if( surname.getText().toString().length() == 0 )
+                    surname.setError( "Prezime  je obavezno!" );
+                if( phone.getText().toString().length() == 0 )
+                    phone.setError( "Telefon je obavezan!" );
+                if( email.getText().toString().length() == 0 )
+                    email.setError( "Email je obavezan!" );
+
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.GINGERBREAD) {
                     policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);}
