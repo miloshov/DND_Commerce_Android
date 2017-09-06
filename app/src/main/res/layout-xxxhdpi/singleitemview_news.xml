@@ -34,11 +34,11 @@
         <ImageView
             android:id="@+id/imagen"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
 
             android:layout_marginTop="40dp"
             android:background="#000000"
-            android:scaleType="fitXY" />
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/namen"
