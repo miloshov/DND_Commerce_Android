@@ -35,7 +35,7 @@ public class Ask extends Activity {
             TextView name = (TextView) findViewById(R.id.name_ask);
             TextView email = (TextView) findViewById(R.id.email_ask);
              TextView text = (TextView) findViewById(R.id.text_ask);
-            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", email.getText().toString() , null));
+            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "office@hajora.com" , null));
             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Kontakt:"+name.getText().toString());
             emailIntent.putExtra(Intent.EXTRA_TEXT, text.getText().toString() );
             startActivity(Intent.createChooser(emailIntent, "Pošalji..."));

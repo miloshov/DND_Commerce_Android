@@ -46,7 +46,8 @@
         <activity android:name="com.hajora.dndcommerce.AboutVision" />
         <activity android:name="com.hajora.dndcommerce.AboutPartners" />
         <activity android:name="com.hajora.dndcommerce.Ask"
-            android:windowSoftInputMode="stateUnchanged"/>
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity android:name=".Partner" />
     </application>
     <service
         android:name=".MyFirebaseMessagingService">

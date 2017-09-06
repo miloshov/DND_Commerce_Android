@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-    <android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+ <android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/edukacija_details">
+
         <ImageButton
             android:id="@+id/share"
             android:layout_width="57dp"
@@ -44,7 +43,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="45dp"
             android:background="#000000"
-            android:scaleType="fitXY" />
+            android:dither="true"
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/name"
@@ -83,9 +83,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="214dp"
-            android:layout_gravity="fill_horizontal"
-            android:layout_weight="0.09">
+            android:layout_height="207dp"
+            android:layout_gravity="fill_horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -124,12 +123,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp">
 
-            <Button
-                android:id="@+id/register"
-                android:layout_width="wrap_content"
-                android:layout_height="97dp"
-                android:layout_weight="1.07"
-                android:background="@android:color/transparent" />
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="97dp"
+            android:layout_weight="1.07"
+            android:background="@android:color/transparent" />
 
             <Button
                 android:id="@+id/location"

@@ -2,6 +2,7 @@ package com.hajora.dndcommerce;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -108,10 +109,11 @@ public class SingleItemViewEducation extends Activity {
                 startActivity(i);
             }
         });
-
+        getWindow().setFormat(PixelFormat.RGBA_8888);
 		// Capture position and set results to the ImageView
 		// Passes flag images URL into ImageLoader.class
-		imageLoader.DisplayImage(image, imgflag);
+        imageLoader.DisplayImage(image, imgflag);
+
 
 	}
     @Override
