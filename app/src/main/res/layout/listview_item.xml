@@ -23,6 +23,8 @@
         android:layout_toRightOf="@+id/image"
         android:background="#123E7C"
         android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
         android:textColor="@android:color/white"
         android:textSize="18sp" />
 
@@ -35,6 +37,8 @@
         android:layout_toRightOf="@+id/image"
         android:ellipsize="end"
         android:maxLines="3"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:textColor="@android:color/white" />
 
 

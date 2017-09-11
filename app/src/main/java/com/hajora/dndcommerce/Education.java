@@ -87,7 +87,7 @@ public class Education extends Activity implements SwipeRefreshLayout.OnRefreshL
 			arraylist = new ArrayList<HashMap<String, String>>();
 			// Retrieve JSON Objects from the given URL address
 			jsonobject = JSONfunctions
-					.getJSONfromURL("http://gdecemo.byethost33.com/MediaApp/educations.php");
+					.getJSONfromURL("https://dndadmin.hajora.com/educations.php");
 
 			try {
 				// Locate the array name in JSON
