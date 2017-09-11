@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_margin="15dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
@@ -26,56 +26,56 @@
 
     <EditText
         android:id="@+id/surname"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_margin="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Prezime"
         android:inputType="textPersonName"
         android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
         app:layout_constraintVertical_bias="0.423" />
 
     <EditText
         android:id="@+id/institution"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_margin="15dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Ustanova"
+        android:inputType="textPersonName"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.59" />
+        app:layout_constraintVertical_bias="0.509" />
 
     <EditText
         android:id="@+id/license"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:hint="Licenca"
         android:inputType="number"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
 
     <EditText
         android:id="@+id/phone"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:hint="Telefon"
@@ -93,8 +93,8 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:hint="Email"
@@ -112,9 +112,9 @@
 
     <Button
         android:id="@+id/evSubmit"
-        android:layout_width="120dp"
-        android:layout_height="94dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="98dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="25dp"
         android:background="@android:color/transparent"
         android:onClick="Salji"
         android:textColor="#ffffff"

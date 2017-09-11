@@ -21,17 +21,18 @@ public class Submit extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.submit);
-        TextView naslov = (TextView) findViewById(R.id.submitName);
+
         final EditText name = (EditText) findViewById(R.id.name);
         final EditText surname = (EditText) findViewById(R.id.surname);
         final EditText license = (EditText) findViewById(R.id.license);
+        final EditText institution = (EditText) findViewById(R.id.institution);
         final EditText phone = (EditText) findViewById(R.id.phone);
         final EditText email = (EditText) findViewById(R.id.email);
         Bundle bundle = null;
         bundle = this.getIntent().getExtras();
         final String myString = bundle.getString("submitName");
 
-        naslov.setText(myString);
+
         final Button send = (Button) this.findViewById(R.id.evSubmit);
 
         send.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +41,7 @@ public class Submit extends Activity {
                 String mname = name.getText().toString();
                 String msurname = surname.getText().toString();
                 String mlicense = license.getText().toString();
+                String minstitution = institution.getText().toString();
                 String mphone = phone.getText().toString();
                 String memail = email.getText().toString();
                 StrictMode.ThreadPolicy policy = null;
@@ -60,15 +62,15 @@ public class Submit extends Activity {
                 m.setTo(toArr);
                 m.setFrom("nikola.arsovski@hajora.com");
                 m.setSubject("Prijava za edukaciju");
-                m.setBody("Prijava za događaj:"+myString+"\nPodaci o korisniku:\nIme: "+mname+"\nPrezime: " +msurname+"\nBroj licence: "+mlicense+"\nTelefon: "+mphone+"\nEmail: "+memail);
+                m.setBody("Prijava za događaj:"+myString+"\nPodaci o korisniku:\nIme: "+mname+"\nPrezime: " +msurname+"\nBroj licence: "+mlicense+"\nUstanova: "+minstitution+"\nTelefon: "+mphone+"\nEmail: "+memail);
 
                 try {
                     /*m.addAttachment("/sdcard/filelocation");*/
 
                     if(m.send()) {
-                        Toast.makeText(Submit.this, "Email was sent successfully.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Submit.this, "Uspešno ste se prijavili.", Toast.LENGTH_LONG).show();
                     } else {
-                        Toast.makeText(Submit.this, "Email was not sent.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Submit.this, "Prijava nije uspešna.", Toast.LENGTH_LONG).show();
                     }
                 } catch(Exception e) {
                     //Toast.makeText(MailApp.this, "There was a problem sending the email.", Toast.LENGTH_LONG).show();
