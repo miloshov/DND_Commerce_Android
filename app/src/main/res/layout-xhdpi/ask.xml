@@ -31,7 +31,10 @@
             app:layout_constraintHorizontal_weight="2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#000"
+            android:textColorHint="#999"
+            android:theme="@android:style/Theme.Material"/>
 
     <EditText
         android:id="@+id/email_ask"
@@ -47,7 +50,10 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_ask" />
+        app:layout_constraintTop_toBottomOf="@+id/name_ask"
+        android:textColor="#000"
+        android:textColorHint="#999"
+        android:theme="@android:style/Theme.Material"/>
 
         <EditText
             android:id="@+id/text_ask"
@@ -72,7 +78,10 @@
             android:transformPivotY="1dp"
             app:layout_optimizationLevel="all"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="217dp" />
+            android:layout_marginTop="217dp"
+            android:textColor="#000"
+            android:textColorHint="#999"
+            android:theme="@android:style/Theme.Material" />
 
         <Button
             android:id="@+id/send_ask"

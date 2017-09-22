@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/pitanje"
-    android:orientation="vertical">
-
-    <android.support.constraint.ConstraintLayout
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintGuide_percent="0.5">
+        android:background="@drawable/pitanje"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/name_ask"
@@ -18,16 +13,19 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="102dp"
+            android:layout_marginTop="128dp"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Ime"
             android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_weight="2"/>
+            app:layout_constraintHorizontal_weight="2"
+            android:textColor="#000"
+            android:textColorHint="#999"
+            android:theme="@android:style/Theme.Material"/>
 
         <EditText
             android:id="@+id/email_ask"
@@ -43,12 +41,15 @@
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_ask" />
+            app:layout_constraintTop_toBottomOf="@+id/name_ask"
+            android:textColor="#000"
+            android:textColorHint="#999"
+            android:theme="@android:style/Theme.Material"/>
 
         <EditText
             android:id="@+id/text_ask"
-            android:layout_width="241dp"
-            android:layout_height="222dp"
+            android:layout_width="285dp"
+            android:layout_height="254dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
@@ -68,12 +69,16 @@
             android:transformPivotY="1dp"
             app:layout_optimizationLevel="all"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="183dp" />
+            android:layout_marginTop="230dp"
+            app:layout_constraintHorizontal_bias="0.503"
+            android:textColor="#000"
+            android:textColorHint="#999"
+            android:theme="@android:style/Theme.Material" />
 
         <Button
             android:id="@+id/send_ask"
-            android:layout_width="95dp"
-            android:layout_height="83dp"
+            android:layout_width="94dp"
+            android:layout_height="100dp"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -93,6 +98,6 @@
             app:layout_constraintTop_toBottomOf="@+id/text_ask"
             app:layout_optimizationLevel="all"
             app:layout_constraintVertical_bias="0.969"
-            app:layout_constraintHorizontal_bias="0.502" />
+            app:layout_constraintHorizontal_bias="0.502"
+            tools:layout_editor_absoluteY="531dp" />
     </android.support.constraint.ConstraintLayout>
-</LinearLayout>

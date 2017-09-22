@@ -18,12 +18,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="102dp"
+            android:layout_marginTop="127dp"
             android:ems="10"
             android:gravity="center_horizontal"
             android:hint="Ime"
             android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -47,8 +47,8 @@
 
         <EditText
             android:id="@+id/text_ask"
-            android:layout_width="241dp"
-            android:layout_height="222dp"
+            android:layout_width="287dp"
+            android:layout_height="264dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
@@ -68,12 +68,13 @@
             android:transformPivotY="1dp"
             app:layout_optimizationLevel="all"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="183dp" />
+            android:layout_marginTop="224dp"
+            app:layout_constraintHorizontal_bias="0.503" />
 
         <Button
             android:id="@+id/send_ask"
-            android:layout_width="95dp"
-            android:layout_height="83dp"
+            android:layout_width="106dp"
+            android:layout_height="98dp"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -92,7 +93,8 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_ask"
             app:layout_optimizationLevel="all"
-            app:layout_constraintVertical_bias="0.969"
-            app:layout_constraintHorizontal_bias="0.502" />
+            app:layout_constraintVertical_bias="0.976"
+            app:layout_constraintHorizontal_bias="0.501"
+            tools:layout_editor_absoluteY="533dp" />
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>
