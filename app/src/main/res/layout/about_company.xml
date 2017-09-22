@@ -1,23 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onama"
+    android:orientation="vertical"
+>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="O nama"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+    <ImageButton
+        android:id="@+id/share_company"
+        android:layout_width="57dp"
+        android:layout_height="43dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_share_black_24dp" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <ImageView
+        android:id="@+id/imagen"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Kompanija DND Commerce je zastupnik i distributer najvećih svetskih firmi iz oblasti sterilizacije. Prodajni program obuhvata čitav spektar proizvoda za sterilizaciju – pakovni materijali za sterilizaciju, lepilice za rolne i kese, kompletan portfolio aparata za sterilizaciju, kompletan materijal za kontrolu sterilizacije, kompletan medicinski nameštaj za sterilizaciju. Svi proizvodi ispunjavaju zahteve međunarodnih standarda i regulativa i koriste se u preko 80 zemalja širom sveta. Osim najkvalitetnijih proizvoda, ono što nas izdvaja od drugih jeste da možete dobiti i adekvatno znanje za primenu istih. Konstantno ulažemo u obrazovanje kroz edukacije, radionice i seminare sa ciljem da podignemo svest o sterilizaciji u svim zdravstvenim ustanovama. Takođe, i naše prezentacije Vam pružaju mogućnost upoznavanja proizvoda i njihovu primenu uz dobijanje adekvatnih kataloga i uzoraka.  Skladištenje, prodaja i distribucija proizvoda sa jasno definisanim uslovima nabavke, kao i odgovorom na zahteve tržišta su karakteristika uspešnog poslovanja DND Commerca. Politika firme je stalna težnja ka unapređenju na svim poljima. "
-        android:textSize="18sp" />
+        android:layout_height="200dp"
+
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="Kompanija DND Commerce je zastupnik i distributer najvećih svetskih firmi iz oblasti sterilizacije. Prodajni program obuhvata čitav spektar proizvoda za sterilizaciju – pakovni materijali za sterilizaciju, lepilice za rolne i kese, kompletan portfolio aparata za sterilizaciju, kompletan materijal za kontrolu sterilizacije, kompletan medicinski nameštaj za sterilizaciju. Svi proizvodi ispunjavaju zahteve međunarodnih standarda i regulativa i koriste se u preko 80 zemalja širom sveta. Osim najkvalitetnijih proizvoda, ono što nas izdvaja od drugih jeste da možete dobiti i adekvatno znanje za primenu istih. Konstantno ulažemo u obrazovanje kroz edukacije, radionice i seminare sa ciljem da podignemo svest o sterilizaciji u svim zdravstvenim ustanovama. Takođe, i naše prezentacije Vam pružaju mogućnost upoznavanja proizvoda i njihovu primenu uz dobijanje adekvatnih kataloga i uzoraka.  Skladištenje, prodaja i distribucija proizvoda sa jasno definisanim uslovima nabavke, kao i odgovorom na zahteve tržišta su karakteristika uspešnog poslovanja DND Commerca. Politika firme je stalna težnja ka unapređenju na svim poljima. "
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

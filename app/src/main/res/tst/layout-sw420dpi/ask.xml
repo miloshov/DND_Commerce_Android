@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pitanje"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.5">
+
+        <EditText
+            android:id="@+id/name_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="114dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Ime"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="2"/>
+
+        <EditText
+            android:id="@+id/email_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_ask" />
+
+        <EditText
+            android:id="@+id/text_ask"
+            android:layout_width="264dp"
+            android:layout_height="260dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Pitajte nas"
+            android:inputType="textMultiLine"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:fitsSystemWindows="true"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:textScaleX="1"
+            android:transformPivotX="1dp"
+            android:transformPivotY="1dp"
+            app:layout_optimizationLevel="all"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="195dp" />
+
+        <Button
+            android:id="@+id/send_ask"
+            android:layout_width="95dp"
+            android:layout_height="83dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="18dp"
+            android:width="1dp"
+            android:background="@android:color/transparent"
+            android:elevation="24dp"
+            android:fitsSystemWindows="true"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:textScaleX="1"
+            android:transformPivotX="1dp"
+            android:transformPivotY="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_ask"
+            app:layout_optimizationLevel="all"
+            app:layout_constraintVertical_bias="0.969"
+            app:layout_constraintHorizontal_bias="0.502" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

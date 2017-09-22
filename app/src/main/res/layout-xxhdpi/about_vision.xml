@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vizija"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/share_vizija"
+        android:layout_width="57dp"
+        android:layout_height="43dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_share_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Glavni cilj kompanije DND Commerce je podizanje celokupnog procesa sterilizacije na viši nivo u svim zdravstvenim ustanovama, kako u Srbiji, tako i na teritoriji cele bivše Jugoslavije.
+Neprekidno praćenje inovacija iz oblasti sterilizacije je odgovornost i obaveza kompanije DND Commerce.
+Takođe, konstantnim ulaganjem u obrazovanje kroz edukacije (interne i eksterne), radionice i  seminare, radimo na podizanju svesti o sterilizaciji kod svih zdravstvenih radnika.
+Fleksibilnošću i širokim opsegom proizvoda spremni smo da odgovorimo na zahtev krajnjeg korisnika, što nas čini jedinstvenim i prepoznatljivim na tržištu.
+"
+        android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/istorijat"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/share_history"
+        android:layout_width="57dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_share_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Kompanija DND Commerce je osnovana 1992. godine, i opstala je u vremenima koja su iza nas, kako dobrim, tako i lošim. DND Commerce je napredovao punih 20 godina, čime je stekao status kompanije sa tradicijom u koju su uloženi znanje, trud, rad, kapital i energija, kao osnovni preduslovi za uspešnost i dugo trajanje. Daljim napredovanjem trudićemo se da opravdamo ukazano poverenje svih naših kupaca, kako sadašnjih, tako i budućih."
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
