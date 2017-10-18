@@ -26,7 +26,13 @@
         android:layout_marginTop="5dp"
         android:background="#000000"
         android:scaleType="centerCrop" />
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="O kompaniji"
+        android:textSize="24sp" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -39,10 +45,10 @@
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Kompanija DND Commerce je zastupnik i distributer najvećih svetskih firmi iz oblasti sterilizacije. Prodajni program obuhvata čitav spektar proizvoda za sterilizaciju – pakovni materijali za sterilizaciju, lepilice za rolne i kese, kompletan portfolio aparata za sterilizaciju, kompletan materijal za kontrolu sterilizacije, kompletan medicinski nameštaj za sterilizaciju. Svi proizvodi ispunjavaju zahteve međunarodnih standarda i regulativa i koriste se u preko 80 zemalja širom sveta. Osim najkvalitetnijih proizvoda, ono što nas izdvaja od drugih jeste da možete dobiti i adekvatno znanje za primenu istih. Konstantno ulažemo u obrazovanje kroz edukacije, radionice i seminare sa ciljem da podignemo svest o sterilizaciji u svim zdravstvenim ustanovama. Takođe, i naše prezentacije Vam pružaju mogućnost upoznavanja proizvoda i njihovu primenu uz dobijanje adekvatnih kataloga i uzoraka.  Skladištenje, prodaja i distribucija proizvoda sa jasno definisanim uslovima nabavke, kao i odgovorom na zahteve tržišta su karakteristika uspešnog poslovanja DND Commerca. Politika firme je stalna težnja ka unapređenju na svim poljima. "
-                android:textSize="18sp" />
+                android:text="Kompanija DND Commerce je zastupnik i distributer najvećih svetskih firmi iz oblasti sterilizacije. Prodajni program obuhvata čitav spektar proizvoda za sterilizaciju – pakovni materijali za sterilizaciju, lepilice za rolne i kese, kompletan portfolio aparata za sterilizaciju, kompletan materijal za kontrolu sterilizacije, kompletan medicinski nameštaj za sterilizaciju. Svi proizvodi ispunjavaju zahteve međunarodnih standarda i regulativa i koriste se u preko 80 zemalja širom sveta. Osim najkvalitetnijih proizvoda, ono što nas izdvaja od drugih jeste da možete dobiti i adekvatno znanje za primenu istih. Konstantno ulažemo u obrazovanje kroz edukacije, radionice i seminare sa ciljem da podignemo svest o sterilizaciji u svim zdravstvenim ustanovama. Takođe, i naše prezentacije Vam pružaju mogućnost upoznavanja proizvoda i njihovu primenu uz dobijanje adekvatnih kataloga i uzoraka.  Skladištenje, prodaja i distribucija proizvoda sa jasno definisanim uslovima nabavke, kao i odgovorom na zahteve tržišta su karakteristika uspešnog poslovanja DND Commerce-a. Politika firme je stalna težnja ka unapređenju na svim poljima. "
+                android:textSize="10sp" />
         </LinearLayout>
     </ScrollView>
 

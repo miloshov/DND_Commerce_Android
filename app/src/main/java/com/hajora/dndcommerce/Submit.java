@@ -1,6 +1,7 @@
 package com.hajora.dndcommerce;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
@@ -8,7 +9,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -31,13 +31,19 @@ public class Submit extends Activity {
         Bundle bundle = null;
         bundle = this.getIntent().getExtras();
         final String myString = bundle.getString("submitName");
-
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/poppins.ttf");
+        name.setTypeface(font);
+        surname.setTypeface(font);
+        license.setTypeface(font);
+        institution.setTypeface(font);
+        phone.setTypeface(font);
+        email.setTypeface(font);
 
         final Button send = (Button) this.findViewById(R.id.evSubmit);
 
         send.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Mail m = new Mail("nikola.arsovski@hajora.com", "Ar5a0230");
+                Mail m = new Mail("dndadmin@hajora.com", "_NKTD]W7uIC(");
                 String mname = name.getText().toString();
                 String msurname = surname.getText().toString();
                 String mlicense = license.getText().toString();
@@ -57,10 +63,10 @@ public class Submit extends Activity {
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.GINGERBREAD) {
                     policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);}
-                String[] toArr = {"nikolayu@gmail.com",memail};
+                String[] toArr = {"info@dndcommerce.rs",memail};
 
                 m.setTo(toArr);
-                m.setFrom("nikola.arsovski@hajora.com");
+                m.setFrom("dndadmin@hajora.com");
                 m.setSubject("Prijava za edukaciju");
                 m.setBody("Prijava za događaj:"+myString+"\nPodaci o korisniku:\nIme: "+mname+"\nPrezime: " +msurname+"\nBroj licence: "+mlicense+"\nUstanova: "+minstitution+"\nTelefon: "+mphone+"\nEmail: "+memail);
 
@@ -69,6 +75,7 @@ public class Submit extends Activity {
 
                     if(m.send()) {
                         Toast.makeText(Submit.this, "Uspešno ste se prijavili.", Toast.LENGTH_LONG).show();
+                        finish();
                     } else {
                         Toast.makeText(Submit.this, "Prijava nije uspešna.", Toast.LENGTH_LONG).show();
                     }

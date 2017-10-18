@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="187dp"
+        android:layout_height="28dp"
         android:layout_margin="15dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
@@ -17,17 +17,18 @@
         android:hint="Ime"
         android:inputType="textPersonName"
         android:singleLine="true"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.353" />
+        app:layout_constraintVertical_bias="0.357"
+        tools:layout_editor_absoluteY="209dp" />
 
     <EditText
         android:id="@+id/surname"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="187dp"
+        android:layout_height="28dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:hint="Prezime"
@@ -35,17 +36,17 @@
         android:singleLine="true"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.423" />
+        app:layout_constraintVertical_bias="0.425"
+        android:textSize="12sp"/>
 
     <EditText
         android:id="@+id/institution"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="187dp"
+        android:layout_height="28dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -56,12 +57,13 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.59" />
+        app:layout_constraintVertical_bias="0.59"
+        android:textSize="12sp"/>
 
     <EditText
         android:id="@+id/license"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="187dp"
+        android:layout_height="28dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:hint="Licenca"
@@ -70,12 +72,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintVertical_bias="0.522"
+        android:textSize="12sp"/>
 
     <EditText
         android:id="@+id/phone"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="187dp"
+        android:layout_height="28dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:hint="Telefon"
@@ -89,12 +92,13 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintVertical_bias="0.673"
+        android:textSize="12sp"/>
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
+        android:layout_width="187dp"
+        android:layout_height="28dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:hint="Email"
@@ -108,7 +112,8 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintVertical_bias="0.747" />
+        app:layout_constraintVertical_bias="0.747"
+        android:textSize="12sp"/>
 
     <Button
         android:id="@+id/evSubmit"

@@ -3,6 +3,7 @@ package com.hajora.dndcommerce;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.PixelFormat;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -60,7 +61,11 @@ public class SingleItemViewEducation extends Activity {
         Button location = (Button) findViewById(R.id.location);
 		// Locate the ImageView in singleitemview.xml
 		ImageView imgflag = (ImageView) findViewById(R.id.image);
-
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/poppins.ttf");
+        txtname.setTypeface(font);
+        txtdate.setTypeface(font);
+        txtaddress.setTypeface(font);
+        txtdescription.setTypeface(font);
 		// Set results to the TextViews
         txtname.setText(name);
         txtdate.setText(date);

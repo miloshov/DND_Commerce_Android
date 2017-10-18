@@ -14,41 +14,43 @@
 
         <EditText
             android:id="@+id/name_ask"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="201dp"
+            android:layout_height="26dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="127dp"
+            android:layout_marginTop="118dp"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:hint="Ime"
+            android:hint="Vaše ime i prezime"
             android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.503"
+            android:textSize="14sp"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintHorizontal_weight="2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_weight="2"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/email_ask"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="197dp"
+            android:layout_height="31dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="-1dp"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:hint="Email"
+            android:hint="Vaša email adresa"
             android:inputType="textEmailAddress"
-            app:layout_constraintHorizontal_bias="0.503"
+            android:textSize="14sp"
+            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name_ask" />
 
         <EditText
             android:id="@+id/text_ask"
-            android:layout_width="287dp"
-            android:layout_height="264dp"
+            android:layout_width="238dp"
+            android:layout_height="242dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
@@ -68,13 +70,13 @@
             android:transformPivotY="1dp"
             app:layout_optimizationLevel="all"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="224dp"
-            app:layout_constraintHorizontal_bias="0.503" />
+            android:layout_marginTop="201dp"
+            app:layout_constraintHorizontal_bias="0.507" />
 
         <Button
             android:id="@+id/send_ask"
-            android:layout_width="106dp"
-            android:layout_height="98dp"
+            android:layout_width="82dp"
+            android:layout_height="78dp"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -93,8 +95,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_ask"
             app:layout_optimizationLevel="all"
-            app:layout_constraintVertical_bias="0.976"
-            app:layout_constraintHorizontal_bias="0.501"
-            tools:layout_editor_absoluteY="533dp" />
+            app:layout_constraintVertical_bias="0.619"
+            app:layout_constraintHorizontal_bias="0.502" />
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>

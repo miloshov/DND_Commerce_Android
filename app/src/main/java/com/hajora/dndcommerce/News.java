@@ -83,7 +83,7 @@ public class News extends Activity implements SwipeRefreshLayout.OnRefreshListen
 			arraylist = new ArrayList<HashMap<String, String>>();
 			// Retrieve JSON Objects from the given URL address
 			jsonobject = JSONfunctions
-					.getJSONfromURL("https://dndadmin.hajora.com/news.php");
+					.getJSONfromURL("http://dndadmin.hajora.com/news.php");
 
 			try {
 				// Locate the array name in JSON

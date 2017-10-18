@@ -2,16 +2,14 @@ package com.hajora.dndcommerce;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
-import static android.R.attr.text;
 
 /**
  * Created by nikol on 05-Sep-17.
@@ -35,24 +33,18 @@ public class Ask extends Activity {
             TextView name = (TextView) findViewById(R.id.name_ask);
             TextView email = (TextView) findViewById(R.id.email_ask);
              TextView text = (TextView) findViewById(R.id.text_ask);
-            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "office@hajora.com" , null));
+            Typeface font = Typeface.createFromAsset(getAssets(), "fonts/poppins.ttf");
+            name.setTypeface(font);
+            email.setTypeface(font);
+            text.setTypeface(font);
+            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "info@dndcommerce.rs" , null));
             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Kontakt:"+name.getText().toString());
-            emailIntent.putExtra(Intent.EXTRA_TEXT, text.getText().toString() );
+            emailIntent.putExtra(Intent.EXTRA_TEXT, text.getText().toString()+"\n"+email.getText().toString());
+
             startActivity(Intent.createChooser(emailIntent, "Pošalji..."));
         }
     });
-        ImageButton share = (ImageButton) findViewById(R.id.share);
-        share.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView text = (TextView) findViewById(R.id.text_ask);
-                Intent sendIntent = new Intent();
-                sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, text.getText().toString());
-                sendIntent.setType("text/plain");
-                startActivity(sendIntent);
-            }
-            });
+
     }
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {

@@ -2,6 +2,7 @@ package com.hajora.dndcommerce;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,7 +16,7 @@ import java.util.HashMap;
 
 public class ListViewAdapterEducation extends BaseAdapter {
 
-	// Declare Variables
+    // Declare Variables
 	Context context;
 	LayoutInflater inflater;
 	ArrayList<HashMap<String, String>> data;
@@ -63,7 +64,9 @@ public class ListViewAdapterEducation extends BaseAdapter {
 		name = (TextView) itemView.findViewById(R.id.name);
 		/*date = (TextView) itemView.findViewById(R.id.date);*/
 		description = (TextView) itemView.findViewById(R.id.description);
-
+        Typeface font = Typeface.createFromAsset(context.getAssets(), "fonts/poppins.ttf");
+        name.setTypeface(font);
+        description.setTypeface(font);
 		// Locate the ImageView in listview_item.xml
 		image = (ImageView) itemView.findViewById(R.id.image);
 
@@ -103,6 +106,8 @@ public class ListViewAdapterEducation extends BaseAdapter {
 
 			}
 		});
+
+
 		return itemView;
 	}
 }

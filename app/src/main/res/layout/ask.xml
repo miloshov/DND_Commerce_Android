@@ -13,10 +13,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="128dp"
+            android:layout_marginTop="123dp"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:hint="Ime"
+            android:hint="Vaše ime i prezime"
             android:inputType="textPersonName"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -36,7 +36,7 @@
             android:layout_marginTop="0dp"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:hint="Email"
+            android:hint="Vaša email adresa"
             android:inputType="textEmailAddress"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -69,11 +69,11 @@
             android:transformPivotY="1dp"
             app:layout_optimizationLevel="all"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="230dp"
-            app:layout_constraintHorizontal_bias="0.503"
+            android:layout_marginTop="228dp"
             android:textColor="#000"
             android:textColorHint="#999"
-            android:theme="@android:style/Theme.Material" />
+            android:theme="@android:style/Theme.Material"
+            app:layout_constraintHorizontal_bias="0.506" />
 
         <Button
             android:id="@+id/send_ask"
@@ -97,7 +97,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_ask"
             app:layout_optimizationLevel="all"
-            app:layout_constraintVertical_bias="0.969"
-            app:layout_constraintHorizontal_bias="0.502"
-            tools:layout_editor_absoluteY="531dp" />
+            app:layout_constraintVertical_bias="0.814"
+            app:layout_constraintHorizontal_bias="0.498" />
     </android.support.constraint.ConstraintLayout>

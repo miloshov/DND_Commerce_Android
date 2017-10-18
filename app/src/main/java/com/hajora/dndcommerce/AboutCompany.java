@@ -2,6 +2,7 @@ package com.hajora.dndcommerce;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -32,6 +33,9 @@ public class AboutCompany extends Activity {
                 startActivity(sendIntent);
             }
         });
+        TextView textfont = (TextView) findViewById(R.id.textView3);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/poppins.ttf");
+        textfont.setTypeface(font);
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.hajora.dndcommerce;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -40,7 +41,10 @@ public class SingleItemViewNews extends Activity {
         TextView txtname = (TextView) findViewById(R.id.namen);
 		TextView txtdate = (TextView) findViewById(R.id.daten);
 		TextView txtdescription = (TextView) findViewById(R.id.descriptionn);
-
+		Typeface font = Typeface.createFromAsset(getAssets(), "fonts/poppins.ttf");
+		txtname.setTypeface(font);
+		txtdate.setTypeface(font);
+		txtdescription.setTypeface(font);
 		// Locate the ImageView in singleitemview.xml
 		ImageView imgflag = (ImageView) findViewById(R.id.imagen);
 

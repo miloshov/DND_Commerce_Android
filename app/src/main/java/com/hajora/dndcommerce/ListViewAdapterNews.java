@@ -2,6 +2,7 @@ package com.hajora.dndcommerce;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -63,7 +64,9 @@ public class ListViewAdapterNews extends BaseAdapter {
 		name = (TextView) itemView.findViewById(R.id.name);
 		/*date = (TextView) itemView.findViewById(R.id.date);*/
 		description = (TextView) itemView.findViewById(R.id.description);
-
+		Typeface font = Typeface.createFromAsset(context.getAssets(), "fonts/poppins.ttf");
+		name.setTypeface(font);
+		description.setTypeface(font);
 		// Locate the ImageView in listview_item.xml
 		image = (ImageView) itemView.findViewById(R.id.image);
 

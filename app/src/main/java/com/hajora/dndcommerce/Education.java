@@ -19,6 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+@SuppressWarnings("ALL")
 public class Education extends Activity implements SwipeRefreshLayout.OnRefreshListener {
 	// Declare Variables
 	JSONObject jsonobject;
@@ -45,25 +46,25 @@ public class Education extends Activity implements SwipeRefreshLayout.OnRefreshL
 
 		SwipeRefreshLayout swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
 		swipeLayout.setOnRefreshListener(this);
-		swipeLayout.setColorSchemeColors(Color.BLUE,Color.RED,Color.GREEN);
-
+		swipeLayout.setColorSchemeColors(Color.BLUE, Color.RED, Color.GREEN);
 		// Execute DownloadJSON AsyncTask
 		new DownloadJSON().execute();
+
+
+
 	}
 
 
 
-	@Override public void onRefresh() {
-		new Handler().postDelayed(new Runnable() {
-			@Override public void run() {
-				new DownloadJSON().execute();
+    @Override public void onRefresh() {
+        new Handler().postDelayed(new Runnable() {
+            @Override public void run() {
+                new DownloadJSON().execute();
                 SwipeRefreshLayout swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
-				swipeLayout.setRefreshing(false);
-			}
-		}, 1000);
-	}
-
-
+                swipeLayout.setRefreshing(false);
+            }
+        }, 1000);
+    }
 	// DownloadJSON AsyncTask
 	private class DownloadJSON extends AsyncTask<Void, Void, Void> {
 
@@ -79,6 +80,7 @@ public class Education extends Activity implements SwipeRefreshLayout.OnRefreshL
 			mProgressDialog.setIndeterminate(false);
 			// Show progressdialog
 			mProgressDialog.show();
+
 		}
 
 		@Override
@@ -87,7 +89,7 @@ public class Education extends Activity implements SwipeRefreshLayout.OnRefreshL
 			arraylist = new ArrayList<HashMap<String, String>>();
 			// Retrieve JSON Objects from the given URL address
 			jsonobject = JSONfunctions
-					.getJSONfromURL("https://dndadmin.hajora.com/educations.php");
+					.getJSONfromURL("http://dndadmin.hajora.com/educations.php");
 
 			try {
 				// Locate the array name in JSON
@@ -114,11 +116,11 @@ public class Education extends Activity implements SwipeRefreshLayout.OnRefreshL
 			}
 			return null;
 		}
-
 		@Override
 		protected void onPostExecute(Void args) {
 			// Locate the listview in listview_main.xml
 			listview = (ListView) findViewById(R.id.listview);
+
 			// Pass the results into ListViewAdapter.java
 			adapter = new ListViewAdapterEducation(Education.this, arraylist);
 			// Set the adapter to the ListView
@@ -126,7 +128,14 @@ public class Education extends Activity implements SwipeRefreshLayout.OnRefreshL
 			// Close the progressdialog
 			mProgressDialog.dismiss();
 		}
+
 	}
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(mProgressDialog!=null && mProgressDialog.isShowing())
+            mProgressDialog.dismiss();
+    }
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
 		super.onWindowFocusChanged(hasFocus);

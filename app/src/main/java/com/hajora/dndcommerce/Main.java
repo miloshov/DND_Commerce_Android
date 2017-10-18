@@ -1,16 +1,15 @@
 package com.hajora.dndcommerce;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
-import android.content.DialogInterface;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -23,20 +22,35 @@ public class Main extends Activity {
         FirebaseMessaging.getInstance().subscribeToTopic("main");
 
     }
-     public void education(View v){
-            Intent education = new Intent(Main.this, Education.class);
-            startActivity(education);
-        }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+     public void education(View v) {
+         if (isNetworkAvailable()) {
+             Intent education = new Intent(this, Education.class);
+             startActivity(education);
+         } else {
+             Toast.makeText(this, "Proverite internet konekciju", Toast.LENGTH_LONG).show();
+         }
+     }
     public void about(View v){
-        Intent about = new Intent(Main.this, About.class);
+        Intent about = new Intent(this, About.class);
         startActivity(about);
     }
-    public void news(View v){
-        Intent news = new Intent(Main.this, News.class);
-        startActivity(news);
+    public void news(View v) {
+        if (isNetworkAvailable()) {
+            Intent news = new Intent(this, News.class);
+            startActivity(news);
+        } else {
+            Toast.makeText(this, "Proverite internet konekciju", Toast.LENGTH_LONG).show();
+        }
     }
     public void contact(View v){
-        Intent contact = new Intent(Main.this, Contact.class);
+        Intent contact = new Intent(this, Contact.class);
         startActivity(contact);
     }
     public void call(View v) {

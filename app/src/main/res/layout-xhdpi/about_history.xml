@@ -20,11 +20,17 @@
         android:id="@+id/imagen"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-
+        android:src="@drawable/istorijatimg"
         android:layout_marginTop="5dp"
         android:background="#000000"
         android:scaleType="centerCrop" />
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Istorijat DND Commerce-a"
+        android:textSize="24sp" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
