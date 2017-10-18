@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,12 +26,16 @@ public class Partner extends Activity {
         final String link = getIntent().getStringExtra("link");
 
         TextView par = (TextView) findViewById(R.id.par);
-        TextView tex = (TextView) findViewById(R.id.tex);
+
         ImageView img = (ImageView) findViewById(R.id.imageViewPartner);
         /*final TextView lin = (TextView) findViewById(R.id.lin);*/
+        WebView webView = (WebView) findViewById(R.id.webView1);
+        String myData = "<html>\n<head>\n<style type=\"text/css\">\n@font-face {\nfont-family: MyFont;\nsrc: url(\"file:///android_asset/fonts/poppins.ttf\")\n}\nbody {\nfont-family: MyFont;\nfont-size: medium;\ntext-align: justify;\n}\n</style>\n</head>\n<body>";
+        myData += tekst;
+        myData += "</body></html>";
+        webView.loadDataWithBaseURL("", myData,"text/html", "utf-8", null);
 
 
-        tex.setText(tekst);
         par.setText(partner);
         switch (logo) {
             case "1":
@@ -53,6 +58,9 @@ public class Partner extends Activity {
                 break;
             case "7":
                 img.setImageResource(R.drawable.printex);
+                break;
+            case "8":
+                img.setImageResource(R.drawable.cbm);
                 break;
 
         }

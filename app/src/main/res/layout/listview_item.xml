@@ -23,10 +23,14 @@
         android:layout_toRightOf="@+id/image"
         android:background="#123E7C"
         android:gravity="center"
+        android:lines="1"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
+        android:singleLine="false"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
 
 
     <TextView

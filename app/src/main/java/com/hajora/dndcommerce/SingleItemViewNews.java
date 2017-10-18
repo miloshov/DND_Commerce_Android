@@ -6,6 +6,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -40,18 +41,22 @@ public class SingleItemViewNews extends Activity {
 		// Locate the TextViews in singleitemview.xml
         TextView txtname = (TextView) findViewById(R.id.namen);
 		TextView txtdate = (TextView) findViewById(R.id.daten);
-		TextView txtdescription = (TextView) findViewById(R.id.descriptionn);
+
 		Typeface font = Typeface.createFromAsset(getAssets(), "fonts/poppins.ttf");
 		txtname.setTypeface(font);
 		txtdate.setTypeface(font);
-		txtdescription.setTypeface(font);
+
 		// Locate the ImageView in singleitemview.xml
 		ImageView imgflag = (ImageView) findViewById(R.id.imagen);
-
+		WebView webView = (WebView) findViewById(R.id.webView1);
+		String myData = "<html>\n<head>\n<style type=\"text/css\">\n@font-face {\nfont-family: MyFont;\nsrc: url(\"file:///android_asset/fonts/poppins.ttf\")\n}\nbody {\nfont-family: MyFont;\nfont-size: medium;\ntext-align: justify;\n}\n</style>\n</head>\n<body>";
+		myData += description;
+		myData += "</body></html>";
+		webView.loadDataWithBaseURL("", myData,"text/html", "utf-8", null);
 		// Set results to the TextViews
         txtname.setText(name);
         txtdate.setText(date);
-        txtdescription.setText(description);
+
         final String desc = description;
         final String sharename = name;
         final String sharedate = date;

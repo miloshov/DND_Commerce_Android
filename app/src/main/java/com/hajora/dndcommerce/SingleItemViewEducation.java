@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -56,7 +57,7 @@ public class SingleItemViewEducation extends Activity {
         TextView txtname = (TextView) findViewById(R.id.name);
 		TextView txtdate = (TextView) findViewById(R.id.date);
         TextView txtaddress = (TextView) findViewById(R.id.address);
-		TextView txtdescription = (TextView) findViewById(R.id.description);
+
         Button btn = (Button) findViewById(R.id.register);
         Button location = (Button) findViewById(R.id.location);
 		// Locate the ImageView in singleitemview.xml
@@ -65,12 +66,16 @@ public class SingleItemViewEducation extends Activity {
         txtname.setTypeface(font);
         txtdate.setTypeface(font);
         txtaddress.setTypeface(font);
-        txtdescription.setTypeface(font);
+        WebView webView = (WebView) findViewById(R.id.webView1);
+        String myData = "<html>\n<head>\n<style type=\"text/css\">\n@font-face {\nfont-family: MyFont;\nsrc: url(\"file:///android_asset/fonts/poppins.ttf\")\n}\nbody {\nfont-family: MyFont;\nfont-size: medium;\ntext-align: justify;\n}\n</style>\n</head>\n<body>";
+        myData += description;
+        myData += "</body></html>";
+        webView.loadDataWithBaseURL("", myData,"text/html", "utf-8", null);
 		// Set results to the TextViews
         txtname.setText(name);
         txtdate.setText(date);
         txtaddress.setText(address);
-        txtdescription.setText(description);
+
         submitName = txtname.getText().toString();
 
         final String addressmap = address;

@@ -18,7 +18,7 @@ public class AboutPartners extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_partners);
 
-        Button AMCOR = (Button) findViewById(R.id.part1);
+        Button AMCOR = (Button) findViewById(R.id.amcor);
         AMCOR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,12 +41,12 @@ public class AboutPartners extends Activity {
                 intent.putExtra("tekst", "Belintra je vodeći Evropski dobavljač logističkih rešenja sa sedištem u Belgiji. Oni su mnogo više od dobavljača opreme. Oni razvijaju neophodnu infrastrukturu, omogućavaju organizacione i logističke procese i implementiraju funkcionalna rešenja.\n" +
                         "Zahvaljujući efikasnim skladišnim i transportnim rešenjima, svaka zdravstvena organizacija može da poboljša vreme i sredstva uložena u dobrobit svojih pacijenata. Ovo važi za sva odeljenja: sterilizacija, operaciona sala, hitna služba, intenzivna nega, farmacija...\n" +
                         "Tokom 40 godina, Belintra je razvila bogato iskustvo u logistici, zbog čega je i postala pravi stručnjak. Linije različitih proizvoda razvijane su da služe potrebama određenih odeljenja, kao i transportna i skladišna rešenja koja se mogu koristiti u različitim odeljenjima.\n");
-                intent.putExtra("link", "www.belintra.com");
+                intent.putExtra("link", "www.steelco.com");
                 intent.putExtra("logo", "2");
                 startActivity(intent);
             }
         });
-        Button STERIMED = (Button) findViewById(R.id.button18);
+        Button STERIMED = (Button) findViewById(R.id.sterimed);
         STERIMED.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +58,7 @@ public class AboutPartners extends Activity {
                 startActivity(intent);
             }
         });
-        Button SOLTEC = (Button) findViewById(R.id.button19);
+        Button SOLTEC = (Button) findViewById(R.id.soltec);
         SOLTEC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +70,7 @@ public class AboutPartners extends Activity {
                 startActivity(intent);
             }
         });
-        Button STEELCO = (Button) findViewById(R.id.button21);
+        Button STEELCO = (Button) findViewById(R.id.steelco);
         STEELCO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,14 +78,14 @@ public class AboutPartners extends Activity {
                 intent.putExtra("partner", "STEELCO");
                 intent.putExtra("tekst", "Dovoljno je samo reći Steelco. Samim tim ste izabrali jednu od vodećih svetskih kompanija za proizvodnju aparata za sterilizaciju, pranje i dezinfekciju instrumenata, noćnih posuda i sistema za reprocesiranje endoskopa. Ono što ih čini jedinstvenim je italijanski dizajn i vrhunski kvalitet, kao što i samo ime govori. \n" +
                         "Steelco je lider u proizvodnji aparata koji se bavi kontrolom infekcije i može da pruži svojim korisnicima rešenja koja prevazilaze tržišne standarde.\n" +
-                        "Steelco slogan ,,Budite uz nas” se odnosi na profesionalnu obuku kadra kroz Steelco akademiju.\n");
+                        "Steelco slogan ,,BUDITE UZ NAS” se odnosi na profesionalnu obuku kadra kroz Steelco akademiju.\n");
                 intent.putExtra("link", "www.steelcospa.com");
                 intent.putExtra("logo", "5");
 
                 startActivity(intent);
             }
         });
-        Button HAWO = (Button) findViewById(R.id.button17);
+        Button HAWO = (Button) findViewById(R.id.hawo);
         HAWO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,7 +97,7 @@ public class AboutPartners extends Activity {
                 startActivity(intent);
             }
         });
-        Button PRINTEX = (Button)findViewById(R.id.button20);
+        Button PRINTEX = (Button) findViewById(R.id.printex);
         PRINTEX.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -110,8 +110,21 @@ public class AboutPartners extends Activity {
                 startActivity(intent);
             }
         });
-    }
 
+        Button CBM = (Button) findViewById(R.id.cbm);
+        CBM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), Partner.class);
+                intent.putExtra("partner", "CBM");
+                intent.putExtra("tekst", "CBM je vodeća italijanska kompanija za proizvodnju stonih sterilizatora manjih kapaciteta namenjenih za stomatološke ordinacije i laboratorije, kao i korpi i rešetki za stomatološke instrumente, elektronskih panacea vodenih kupatila i elektronskih inkubatora.\n" +
+                        "O kvalitetu kompanije CBM dovoljno govori podatak da posluju od 1962. godine.\n");
+                intent.putExtra("link", "www.cbm-srl.com");
+                intent.putExtra("logo", "8");
+                startActivity(intent);
+            }
+        });
+    }
         @Override
         public void onWindowFocusChanged ( boolean hasFocus){
             super.onWindowFocusChanged(hasFocus);

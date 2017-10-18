@@ -11,7 +11,7 @@ android {
     }
 
     compileSdkVersion 21
-    buildToolsVersion "26.0.0"
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId 'com.hajora.dndcommerce'
         minSdkVersion 21
@@ -20,6 +20,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             signingConfig signingConfigs.release
         }
@@ -38,5 +39,6 @@ dependencies {
     compile files('libs/additionnal.jar')
     compile 'com.google.firebase:firebase-messaging:10.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.uncopt:android.justified:1.0'
 }
 apply plugin: 'com.google.gms.google-services'

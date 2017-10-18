@@ -8,7 +8,7 @@
     android:background="@drawable/partneri">
 
     <Button
-        android:id="@+id/part1"
+        android:id="@+id/amcor"
         android:layout_width="229dp"
         android:layout_height="208dp"
         android:layout_marginBottom="372dp"
@@ -27,25 +27,41 @@
         tools:layout_editor_absoluteY="310dp" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/printex"
         android:layout_width="240dp"
         android:layout_height="215dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="435dp"
         android:background="@android:color/transparent"
         android:onClick="partners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.712"
-        tools:layout_editor_absoluteY="863dp" />
+        app:layout_constraintVertical_bias="0.897" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/cbm"
+        android:layout_width="240dp"
+        android:layout_height="215dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="435dp"
+        android:background="@android:color/transparent"
+        android:onClick="partners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <Button
+        android:id="@+id/belintra"
         android:layout_width="224dp"
         android:layout_height="216dp"
         android:layout_marginEnd="8dp"
@@ -65,7 +81,7 @@
         tools:layout_editor_absoluteX="506dp" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/hawo"
         android:layout_width="220dp"
         android:layout_height="225dp"
         android:layout_marginEnd="8dp"
@@ -83,7 +99,7 @@
         app:layout_constraintVertical_bias="0.402" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/sterimed"
         android:layout_width="237dp"
         android:layout_height="212dp"
         android:layout_marginEnd="8dp"
@@ -101,7 +117,7 @@
         app:layout_constraintVertical_bias="0.234" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/soltec"
         android:layout_width="223dp"
         android:layout_height="197dp"
         android:layout_marginEnd="8dp"
@@ -119,7 +135,7 @@
         app:layout_constraintVertical_bias="0.569" />
 
     <Button
-        android:id="@+id/belintra"
+        android:id="@+id/steelco"
         android:layout_width="234dp"
         android:layout_height="199dp"
         android:layout_marginEnd="8dp"
