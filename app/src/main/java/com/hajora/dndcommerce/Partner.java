@@ -28,13 +28,13 @@ public class Partner extends Activity {
         TextView par = (TextView) findViewById(R.id.par);
 
         ImageView img = (ImageView) findViewById(R.id.imageViewPartner);
-        /*final TextView lin = (TextView) findViewById(R.id.lin);*/
+        final TextView lin = (TextView) findViewById(R.id.web);
         WebView webView = (WebView) findViewById(R.id.webView1);
         String myData = "<html>\n<head>\n<style type=\"text/css\">\n@font-face {\nfont-family: MyFont;\nsrc: url(\"file:///android_asset/fonts/poppins.ttf\")\n}\nbody {\nfont-family: MyFont;\nfont-size: medium;\ntext-align: justify;\n}\n</style>\n</head>\n<body>";
         myData += tekst;
         myData += "</body></html>";
         webView.loadDataWithBaseURL("", myData,"text/html", "utf-8", null);
-
+        lin.setText(link);
 
         par.setText(partner);
         switch (logo) {
@@ -79,7 +79,7 @@ public class Partner extends Activity {
                                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
             }
 
-        /*lin.setText("WWW");*/
+
 
 /*        Button imageLogo = (Button)findViewById(R.id.lin);
         imageLogo.setOnClickListener(new View.OnClickListener() {
